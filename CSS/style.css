@@ -2,6 +2,7 @@
 
 body {
     background-image: linear-gradient(hsl(0, 0%, 10%), hsl(240, 100%, 35%), hsl(0, 0%, 10%));
+    font-family: Merriweather Sans, sans-serif;
 }
 
 
@@ -34,7 +35,6 @@ header > nav {
 }
 
 header a {
-    font-family: Merriweather Sans, sans-serif;
     text-decoration: none;
     color: hsl(0, 0%, 90%);
 }
@@ -68,7 +68,7 @@ header a {
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    height: 25%;
+    height: 30%;
 }
 
 .WelcomeScreen > nav {
@@ -86,7 +86,7 @@ header a {
 }
 
 .WelcomeScreen h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .WelcomeScreen p {
@@ -94,7 +94,7 @@ header a {
 }
 
 .WelcomeScreen a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     background-color: hsl(0, 0%, 10%);
     border-radius: 5px;
