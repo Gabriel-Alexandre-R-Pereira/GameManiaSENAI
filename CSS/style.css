@@ -23,7 +23,6 @@ header {
 }
 
 header > figure, header > nav {
-    display: inline-block;
     margin: 0;
 }
 
@@ -83,7 +82,6 @@ header a {
 .WelcomeScreen h1, .WelcomeScreen p, .WelcomeScreen a {
     text-align: center;
     color: hsl(0, 0%, 90%);
-    display: inline-block;
     margin: 0;
 }
 
@@ -120,7 +118,7 @@ header a {
 
 .Banners > h2 {
     text-align: center;
-    font-family: Silkscreen, Merriweather Sans, sans-serif;
+    font-family: Silkscreen;
     font-size: 3rem;
     background-color: hsl(0, 0%, 10%);
     color: hsl(0, 0%, 90%);
@@ -190,7 +188,7 @@ header a {
 
 .Cards h2 {
     text-align: center;
-    font-family: Silkscreen, Merriweather Sans, sans-serif;
+    font-family: Silkscreen;
     font-size: 3rem;
     background-color: hsl(0, 0%, 10%);
     color: hsl(0, 0%, 90%);
