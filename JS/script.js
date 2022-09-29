@@ -2,6 +2,23 @@
 
 // Mobile and Tablet Menu
 
+function MobileMenu () {
+    var TopMenu = document.getElementById ('TopMenu');
+    if (!(TopMenu.hasAttribute ('class'))) {
+        TopMenu.setAttribute ('class', 'ResponsiveTopMenu')
+    } else {
+        TopMenu.removeAttribute ('class');
+    }
+}
+
+
+
+
+
+// Banners
+
+
+
 
 
 // login.html scripts
