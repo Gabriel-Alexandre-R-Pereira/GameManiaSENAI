@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
 </head>
 
 <body>
@@ -32,16 +33,16 @@
     
                 <section class="EmailContainer">
                     <label for="email">E-mail</label><br>
-                    <input type="email" id="email" name="email" placeholder="nome@exemplo.com">
+                    <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
                 </section>
     
-                <section class="PasswordContainer">
+                <section class="PasswordContainer" id="PasswordContainer">
                     <label for="password">Senha</label><br>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </section>
     
                 <section class="ButtonsContainer">
-                    <button type="submit">Log in</button>
+                    <button type="submit" onclick="ValidationLogin(); return false;">Log in</button>
                     <button type="reset">Recomeçar</button>
                 </section>
             </fieldset>
