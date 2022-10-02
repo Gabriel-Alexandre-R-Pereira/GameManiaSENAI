@@ -2,12 +2,14 @@
 
 // Mobile and Tablet Menu
 
-function MobileMenu () {
-    var TopMenu = document.getElementById ('TopMenu');
-    if (!(TopMenu.hasAttribute ('class'))) {
-        TopMenu.setAttribute ('class', 'ResponsiveTopMenu')
+function MobileMenu() {
+    var TopMenu = document.getElementById('TopMenu');
+    
+    if (!(TopMenu.hasAttribute('class'))) {
+        TopMenu.setAttribute('class', 'ResponsiveTopMenu');
+
     } else {
-        TopMenu.removeAttribute ('class');
+        TopMenu.removeAttribute('class');
     }
 }
 
@@ -15,7 +17,7 @@ function MobileMenu () {
 
 
 
-// Banners
+// Banners Carousel
 
 $(document).ready(function() {
     let interval = window.setInterval(RotateBanners, 5000);
@@ -75,17 +77,17 @@ $(document).ready(function() {
 
 // Validating Login
 
-function ValidationLogin () {
+function ValidationLogin() {
     let Email = document.getElementById('email').value;
     let Password = document.getElementById('password').value;
 
     if ((Email == 'meuemail@exemplo.com') && (Password == 'minhasenha123')) {
-        
-        const success = document.createElement ('samp');
+        const success = document.createElement('samp');
+
         success.innerText = 'Login executado com sucesso!';
+
         document.getElementById('PasswordContainer').appendChild(success);
         success.setAttribute ('id', 'success');
-
         document.getElementById('success').style.color = 'hsl(120, 100%, 35%)';
     
         setTimeout(() => {
@@ -93,12 +95,12 @@ function ValidationLogin () {
         }, 1000);
 
     } else {
+        const failure = document.createElement('samp');
 
-        const failure = document.createElement ('samp');
         failure.innerText = 'Senha ou e-mail incorretos!';
+
         document.getElementById('PasswordContainer').appendChild(failure);
         failure.setAttribute('id', 'failure');
-    
         document.getElementById('failure').style.color = 'hsl(0, 100%, 35%)';
 
         setTimeout(() => {
