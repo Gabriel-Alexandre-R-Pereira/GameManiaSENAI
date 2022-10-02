@@ -142,6 +142,49 @@ header .icon {
     white-space: nowrap;
 }
 
+.Banners figure, .Banners img {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+.Banners figure {
+    position: relative;
+}
+
+.Banners article {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.Banners h3 {
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 10%, 50%);
+    width: 100%;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.Banners article > nav {
+    background-color: hsla(0, 0%, 90%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.Banners a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 10%);
+    padding: 5% 20%;
+    border-radius: 5px;
+}
+
 .fa-caret-left, .fa-caret-right {
     background-color: hsla(0, 0%, 90%, 50%);
     color: hsl(0, 0%, 10%);
@@ -159,49 +202,6 @@ header .icon {
 
 .fa-caret-right {
     right: 20%;
-}
-
-.Banners figure, .Banners img {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-}
-
-.Banners figure {
-    position: relative;
-}
-
-.Banners article {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-}
-
-.Banners article > nav {
-    background-color: hsla(0, 0%, 90%, 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    padding: 1%;
-    border-radius: 5px;
-}
-
-.Banners h3 {
-    font-size: 2rem;
-    background-color: hsla(0, 0%, 10%, 50%);
-    width: 100%;
-    padding: 3%;
-    border-radius: 10px;
-}
-
-.Banners a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: hsl(0, 0%, 90%);
-    background-color: hsl(0, 0%, 10%);
-    padding: 5% 20%;
-    border-radius: 5px;
 }
 
 
@@ -403,11 +403,12 @@ form button {
 
 /* Responsivity */
 
-/* Max width 1300px */
+/* Max width 1201px */
+
+@media screen and (max-width: 1201px) {
 
 /* Header */
 
-@media screen and (max-width: 1300px) {
     header > nav {
         position: relative;
         align-self: flex-start;
@@ -427,7 +428,7 @@ form button {
 
     header > .ResponsiveTopMenu {
         background-color: hsl(0, 0%, 10%);
-        height: 35vh;
+        height: 31vh;
     }
 
     header > .ResponsiveTopMenu > a {
