@@ -56,6 +56,7 @@ header .icon {
     background-image: url(../Images/ImagemPrincipal.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -217,7 +218,7 @@ header .icon {
     align-items: center;
 }
 
-.Cards h2 {
+.Cards > h2 {
     text-align: center;
     font-family: Silkscreen;
     font-size: 3rem;
@@ -403,11 +404,277 @@ form button {
 
 /* Responsivity */
 
-/* Max width 1201px */
+/* Max Width: 2560px */
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 2560px) {
 
-/* Header */
+    /* Header */
+
+    header > figure > a > img {
+        width: 150%;
+    }
+
+    header a {
+        font-size: 2rem;
+    }
+
+
+
+
+
+    /* Welcome Screen */
+
+    .WelcomeScreen > article, .WelcomeScreen > nav {
+        border-radius: 10px;
+    }
+
+    .WelcomeScreen h1 {
+        font-size: 4rem;
+    }
+
+    .WelcomeScreen p {
+        font-size: 3rem;
+    }
+
+    .WelcomeScreen a {
+        font-size: 2.5rem;
+        border-radius: 10px;
+    }
+
+
+
+
+
+    /* Banners */
+
+    .Banners {
+        height: 110vh;
+    }
+
+    .Banners > h2 {
+        font-size: 4.5rem;
+    }
+
+    .Banners h3 {
+        font-size: 3.5rem;
+    }
+
+    .Banners article > nav {
+        border-radius: 10px;
+    }
+
+    .Banners a {
+        font-size: 2.5rem;
+        border-radius: 10px;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 5rem;
+        border-radius: 10px;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > h2 {
+        font-size: 4.5rem;
+    }
+
+    .Cards > nav {
+        height: 130vh;
+        border-radius: 15px;
+    }
+
+    .Cards figure {
+        height: 45%;
+        border-radius: 15px;
+    }
+
+    .Cards figure > nav {
+        border-radius: 10px;
+    }
+
+    .Cards a {
+        font-size: 2.5rem;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    footer > figure > img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Max Width: 1440px */
+
+@media screen and (max-width: 1440px) {
+    
+    /* Header */
+
+    header > figure > a > img {
+        width: 100%;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /* Welcome Screen */
+
+    .WelcomeScreen > article, .WelcomeScreen > nav {
+        border-radius: 5px;
+    }
+
+    .WelcomeScreen h1 {
+        font-size: 2rem;
+    }
+
+    .WelcomeScreen p {
+        font-size: 1.5rem;
+    }
+
+    .WelcomeScreen a {
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+
+
+
+
+    /* Banners */
+
+    .Banners > h2 {
+        font-size: 3rem;
+    }
+
+    .Banners article {
+        top: 20%;
+    }
+
+    .Banners h3 {
+        font-size: 2.5rem;
+    }
+
+    .Banners article > nav {
+        border-radius: 5px;
+    }
+
+    .Banners a {
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 3rem;
+        border-radius: 5px;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > h2 {
+        font-size: 3rem;
+    }
+
+    .Cards > nav {
+        border-radius: 10px;
+    }
+
+    .Cards figure {
+        border-radius: 10px;
+    }
+
+    .Cards figure > nav {
+        border-radius: 5px;
+    }
+
+    .Cards a {
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer > nav img {
+        width: 40px;
+    }
+
+    footer > figure > img {
+        width: 70%;
+    }
+}
+
+
+
+
+
+/* Max Width: 1350px */
+
+@media screen and (max-width: 1350px) {
+    
+    /* Banners */
+
+    .Banners {
+        height: 100vh;
+    }
+
+    .Banners article {
+        top: 15%;
+    }
+
+
+
+
+    /* Cards */
+
+    .Cards > nav {
+        height: 130vh;
+    }
+
+    .Cards figure {
+        height: 40%;
+    }
+}
+
+
+
+
+
+/* Max Width: 1025px */
+
+@media screen and (max-width: 1025px) {
+    
+    /* Header */
 
     header > nav {
         position: relative;
@@ -434,22 +701,450 @@ form button {
     header > .ResponsiveTopMenu > a {
         display: inline-block;
     }
+
+
+
+
+
+    /* Banners */
+
+    .Banners {
+        height: 95vh;
+    }
+
+    .Banners article {
+        top: 13%;
+    }
+
+    .Banners h3 {
+        font-size: 2rem;
+    }
+
+    .Banners a {
+        font-size: 1rem;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 2.5rem;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > nav {
+        height: 155vh;
+    }
+
+    .Cards figure {
+        height: 28%;
+    }
+
+    .Cards a {
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer > nav img {
+        width: 35px;
+    }
 }
 
 
 
 
 
-/* Banners */
+/* Max Width: 769px */
 
-.Banners article {
-    top: 10%;
+@media screen and (max-width: 769px) {
+
+    /* Welcome Screen */
+
+    .WelcomeScreen > nav {
+        width: 25%;
+    }
+
+    .WelcomeScreen h1 {
+        font-size: 1.6rem;
+    }
+
+    .WelcomeScreen p {
+        font-size: 1.1rem;
+    }
+
+    .WelcomeScreen a {
+        font-size: 1.3rem;
+    }
+
+
+
+
+
+    /* Banners */
+
+    .Banners {
+        height: 85vh;
+    }
+
+    .Banners > h2 {
+        font-size: 2.5rem;
+    }
+
+    .Banners article {
+        top: 10%;
+    }
+
+    .Banners h3 {
+        font-size: 1.5rem;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 1.8rem;
+        border-radius: 3px;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > h2 {
+        font-size: 2.5rem;
+    }
+
+    .Cards > nav {
+        height: 130vh;
+    }
+
+    .Cards figure {
+        height: 27%;
+    }
+
+    .Cards a {
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer > nav img {
+        width: 30px;
+    }
 }
 
-.Banners h3 {
-    font-size: 1.5rem;
+
+
+
+
+/* Max Width: 426px */
+
+@media screen and (max-width: 426px) {
+    
+    /* Header */
+    
+    header > figure > a > img {
+        width: 80%;
+    }
+
+    header a {
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+    /* Welcome Screen */
+
+    .WelcomeScreen > nav {
+        width: 30%;
+        height: 10%;
+    }
+
+    .WelcomeScreen h1 {
+        font-size: 1.3rem;
+    }
+
+    .WelcomeScreen p {
+        font-size: 0.8rem;
+    }
+
+    .WelcomeScreen a {
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /* Banners */
+
+    .Banners {
+        height: 55vh;
+    }
+
+    .Banners > h2 {
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+
+    .Banners article {
+        top: 5%;
+    }
+
+    .Banners h3 {
+        font-size: 0.8rem;
+    }
+
+    .Banners a {
+        font-size: 0.6rem;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 1.5rem;
+        padding: 0.3% 1.2%;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > h2 {
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+
+    .Cards > nav {
+        height: 280vh;
+    }
+
+    .Cards figure {
+        width: 50%;
+        height: 14%;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    footer > nav img {
+        width: 25px;
+    }
+
+    footer > figure > img {
+        width: 45%;
+    }
 }
 
-.Banners a {
-    font-size: 1rem;
+
+
+
+
+/* Max Width: 376px */
+
+@media screen and (max-width: 376px) {
+    
+    /* Header */
+    
+    header a {
+        font-size: 0.7rem;
+    }
+
+
+
+
+
+    /* Banners */
+
+    .Banners {
+        height: 50vh;
+    }
+
+    .Banners > h2 {
+        font-size: 1.8rem;
+    }
+
+    .Banners article {
+        top: 5%;
+    }
+
+    .Banners article > nav {
+        border-radius: 2px;
+    }
+
+    .Banners h3 {
+        font-size: 0.8rem;
+    }
+
+    .Banners a {
+        font-size: 0.5rem;
+        border-radius: 2px;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 1.3rem;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > h2 {
+        font-size: 1.8rem;
+    }
+
+    .Cards > nav {
+        height: 270vh;
+    }
+
+    .Cards figure {
+        height: 13%;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    footer > nav img {
+        width: 20px;
+    }
+
+    footer > figure > img {
+        width: 45%;
+    }
+}
+
+
+
+
+
+/* Max Width: 320px */
+
+@media screen and (max-width: 320px) {
+    
+    /* Header */
+    
+    header a {
+        font-size: 0.5rem;
+    }
+
+
+
+
+
+    /* Welcome Screen */
+
+    .WelcomeScreen > nav {
+        width: 35%;
+    }
+
+    .WelcomeScreen h1 {
+        font-size: 1.2rem;
+    }
+
+    .WelcomeScreen p {
+        font-size: 0.6rem;
+    }
+
+    .WelcomeScreen a {
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+    /* Banners */
+
+    .Banners > h2 {
+        font-size: 1.6rem;
+    }
+
+    .Banners article {
+        top: 5%;
+    }
+
+    .Banners h3 {
+        font-size: 0.6rem;
+    }
+
+    .Banners a {
+        font-size: 0.4rem;
+    }
+
+    .fa-caret-left, .fa-caret-right {
+        font-size: 1rem;
+    }
+
+
+
+
+
+    /* Cards */
+
+    .Cards > h2 {
+        font-size: 1.6rem;
+    }
+
+    .Cards > nav {
+        height: 235vh;
+    }
+
+    .Cards figure {
+        height: 13%;
+        width: 55%;
+    }
+
+    .Cards figure > nav {
+        border-radius: 2px;
+    }
+
+
+
+
+
+    /* Footer */
+
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    footer > nav img {
+        width: 20px;
+    }
+
+    footer > figure > img {
+        width: 45%;
+    }
 }
