@@ -860,6 +860,10 @@ header > nav {
 
     /* Welcome Screen */
 
+    .WelcomeScreen {
+        background-image: url(../Images/ImagemPrincipalVertical.png);
+    }
+
     .WelcomeScreen > nav {
         width: 30%;
         height: 10%;
