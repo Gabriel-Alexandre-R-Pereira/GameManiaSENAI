@@ -81,7 +81,7 @@ function ValidationLogin() {
     let Email = document.getElementById('email').value;
     let Password = document.getElementById('password').value;
 
-    if ((Email == 'meuemail@exemplo.com') && (Password == 'minhasenha123')) {
+    if ((Email === 'meuemail@exemplo.com') && (Password === 'minhasenha123')) {
         const success = document.createElement('samp');
 
         success.innerText = 'Login executado com sucesso!';
